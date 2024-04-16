@@ -25,10 +25,10 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer postId;
 
-    @NotEmpty(message = "Title should not be Empty !!")
+    @NotEmpty(message = "Title should not be Empty")
     private String title;
 
-    @NotEmpty(message = "Content should not be Empty !!")
+    @NotEmpty(message = "Content should not be Empty")
     private String content;
 
     private String imageName;
