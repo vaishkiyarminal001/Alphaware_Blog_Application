@@ -38,7 +38,7 @@ public class Config {
 				}
 			});
 		}).authorizeHttpRequests(auth -> auth
-				.requestMatchers(HttpMethod.POST, "/users/", "/admin/").permitAll()
+				.requestMatchers(HttpMethod.POST, "/api/users/register", "/api/admin/register").permitAll()
 				.requestMatchers("/swagger-ui*/**", "/v3/api-docs/**").permitAll()
 				.requestMatchers("/users/**").hasRole("USER")
 				.requestMatchers("/admin/**").hasRole("ADMIN")
