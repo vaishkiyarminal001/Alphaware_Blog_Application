@@ -56,7 +56,7 @@ public class AdminController {
 		return new ResponseEntity<>(admin.getEmail() + " Logged In Successfully", HttpStatus.ACCEPTED);
 	}
 
-	@PostMapping("/")
+	@PostMapping("/register")
 	private ResponseEntity<Admin> createUser(@Valid @RequestBody Admin admin) {
 		admin.setPassword(passwordEncoder.encode(admin.getPassword()));
 		Admin adm = adminService.createAdmin(admin);

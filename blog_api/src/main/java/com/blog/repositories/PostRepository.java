@@ -11,7 +11,7 @@ import com.blog.exceptions.PostException;
 
 public interface PostRepository extends JpaRepository<Post, Integer> {
 	
-	@Query("SELECT p FROM Post p WHERE p.ategory.id = :categoryId")
+	@Query("SELECT p FROM Post p WHERE p.category.id = :categoryId")
 	List<Post> findPostsByCategoryId(@Param("categoryId") int categoryId) throws PostException;
 	
 	@Query("SELECT p FROM Post p WHERE p.myUser.userId = :userId")

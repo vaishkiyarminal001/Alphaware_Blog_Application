@@ -56,7 +56,7 @@ public class UserController {
 			 return new ResponseEntity<>(user.getEmail()+" Logged In Successfully", HttpStatus.ACCEPTED);
 	 }
     
-    @PostMapping("/")
+    @PostMapping("/register")
    private ResponseEntity<MyUser> createUser(@Valid @RequestBody MyUser myUser){
     	myUser.setPassword(passwordEncoder.encode(myUser.getPassword()));
 	   MyUser use = userService.createUser(myUser);
