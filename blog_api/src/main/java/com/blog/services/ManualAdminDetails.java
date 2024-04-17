@@ -57,6 +57,6 @@ private Admin admin;
 	public boolean isEnabled() {
 		// TODO Auto-generated method stub
 		return true;
-	}O
+	}
 
 }
