@@ -83,3 +83,10 @@ This provides a user-friendly interface to interact with the API endpoints and u
 - Swagger (API Documentation)
 - MySQL (Database)
 - Java Cryptography for password encryption
+
+## Add Screenshot
+
+![Screenshot 1](assets/1.png)
+![Screenshot 2](assets/2.png)
+![Screenshot 3](assets/3.png)
+![Screenshot 4](assets/4.png)
